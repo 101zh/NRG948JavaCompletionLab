@@ -65,6 +65,7 @@ NOTE: extra member variables may be required for method implementation
   - Behaviour
     - Prints out ``name ate food`` for each time they eat (based on ``quantity``)
   - NOTE: by default when the turtle is created they just ate
+  - Note: ideally, you would check that ``quantity < 0`` is false, but this isn't a requirement that is listed here
 
 ##### - ``laze``
   - Parameter
@@ -75,6 +76,7 @@ NOTE: extra member variables may be required for method implementation
       - If they eat then they can laze again
   - Behaviour
     - Prints out ``name lazes for x hours. It now lazed consecutively for y hours``
+  - Note: ideally, you would check that ``hours < 0.0`` is false, but this isn't a requirement that is listed here
 
 ### Interaction Part
 
