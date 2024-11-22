@@ -39,7 +39,7 @@ public class Turtle {
     }
 
     public void laze(double hours) {
-        if (hours >= 6.0) {
+        if (hours > 6.0) {
             System.out.println(name + " shakes its head. It knows that " + hours + " hours is too much");
             return;
         } else if (lazedHours >= 6.0) {
