@@ -34,7 +34,8 @@ public class Turtle {
         }
 
         lazedHours = 0.0;
-        System.out.println(name + " happily eats the " + food + "! :)");
+        for (int i = 0; i < quantity; i++)
+            System.out.println(name + " happily eats a " + food + "! :)");
     }
 
     public void laze(double hours) {
@@ -42,13 +43,14 @@ public class Turtle {
             System.out.println(name + " shakes its head. It knows that " + hours + " hours is too much");
             return;
         } else if (lazedHours >= 6.0) {
-            System.out.println(name + " shakes its head. It has already lazed " + lazedHours+" hours");
+            System.out.println(name + " shakes its head. It has already lazed " + lazedHours + " hours");
             return;
         }
 
         lazedHours += hours;
         System.out.println(
-                name + " lazes for " + hours + " hours. "+name+" has now lazed consecutively for " + lazedHours + " hours");
+                name + " lazes for " + hours + " hours. " + name + " has now lazed consecutively for " + lazedHours
+                        + " hours");
     }
 
     public void setAge(int age) {
