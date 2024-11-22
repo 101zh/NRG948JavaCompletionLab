@@ -23,7 +23,7 @@ public final class Main {
         System.out.println("\n\n\nWelcome to turtle interactor!!");
 
         System.out.println("It's time to create your turtle!");
-        createTurtle(userInput, scanner);
+        createTurtle(scanner);
 
         while (!userInput.equals("exit")) {
             System.out.println("\n\nWhat would you like to do?");
@@ -40,7 +40,7 @@ public final class Main {
                         "\nAngry: " + turtle.getAngry() +
                         "\nFavorite Food: " + turtle.getFavoriteFood());
             } else if (userInput.equals("2")) {
-                createTurtle(userInput, scanner);
+                createTurtle(scanner);
             } else if (userInput.equals("3")) {
                 System.out.println("What food?");
                 String food = scanner.nextLine();
@@ -59,7 +59,7 @@ public final class Main {
         scanner.close();
     }
 
-    public static void createTurtle(String userInput, Scanner scanner) {
+    public static void createTurtle(Scanner scanner) {
         System.out.println("What is its name?");
         String nameTurtle = scanner.nextLine();
         System.out.println("What is its age? (# w/o decimal)");
