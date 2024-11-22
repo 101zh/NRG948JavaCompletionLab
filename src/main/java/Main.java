@@ -45,13 +45,11 @@ public final class Main {
                 System.out.println("What food?");
                 String food = scanner.nextLine();
                 System.out.println("How much?");
-                int quantity = scanner.nextInt();
-                scanner.nextLine();
+                int quantity = Integer.parseInt(scanner.nextLine());
                 turtle.eat(quantity, food);
             } else if (userInput.equals("4")) {
                 System.out.println("How long (in hours)?");
-                Double duration = scanner.nextDouble();
-                scanner.nextLine();
+                Double duration = Double.parseDouble(scanner.nextLine());
                 turtle.laze(duration);
             }
         }
@@ -63,10 +61,9 @@ public final class Main {
         System.out.println("What is its name?");
         String nameTurtle = scanner.nextLine();
         System.out.println("What is its age? (# w/o decimal)");
-        int ageTurtle = scanner.nextInt();
+        int ageTurtle = Integer.parseInt(scanner.nextLine());
         System.out.println("Is it angry? (true/false)");
-        boolean angryTurtle = scanner.nextBoolean();
-        scanner.nextLine();
+        boolean angryTurtle = Boolean.parseBoolean(scanner.nextLine());
         System.out.println("What is its favorite food?");
         String foodTurtle = scanner.nextLine();
 
