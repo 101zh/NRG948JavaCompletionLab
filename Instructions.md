@@ -48,7 +48,7 @@ NOTE: extra member variables may be required for method implementation
 
 ##### - Constructor
   - Parameters
-    - ``age``: an **integer** that represents the age of the turtle. Cannot be less than 0.
+    - ``age``: an **integer** that represents the age of the turtle. **Cannot be less than 0**.
     - ``angry``: a **boolean**; true if the Turtle is angry
     - ``name``: a **string** that represents the name of the turtle
     - ``favoriteFood``: a **string** that represents name of the turtle's favorite food
