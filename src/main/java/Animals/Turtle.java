@@ -7,15 +7,15 @@ public class Turtle {
 
     public final static String turtleDescription = "Turtles are reptiles of the order Testudines, characterized by a special shell developed mainly from their ribs. Modern turtles are divided into two major groups, the Pleurodira (side necked turtles) and Cryptodira (hidden necked turtles), which differ in the way the head retracts. There are 360 living and recently extinct species of turtles, including land-dwelling tortoises and freshwater terrapins. They are found on most continents, some islands and, in the case of sea turtles, much of the ocean. Like other amniotes (reptiles, birds, and mammals) they breathe air and do not lay eggs underwater, although many species live in or around water.";
     private int age;
-    private boolean angry;
+    private boolean isAngry;
     private String name;
     private String favoriteFood;
 
     private double lazedHours = 0.0;
 
-    public Turtle(int age, boolean angry, String name, String favoriteFood) {
+    public Turtle(int age, boolean isAngry, String name, String favoriteFood) {
         setAge(age);
-        setAngry(angry);
+        setIsAngry(isAngry);
         setName(name);
         setFavoriteFood(favoriteFood);
     }
@@ -62,8 +62,8 @@ public class Turtle {
         }
     }
 
-    public void setAngry(boolean angry) {
-        this.angry = angry;
+    public void setIsAngry(boolean isAngry) {
+        this.isAngry = isAngry;
     }
 
     public void setName(String name) {
@@ -78,8 +78,8 @@ public class Turtle {
         return age;
     }
 
-    public boolean getAngry() {
-        return angry;
+    public boolean getIsAngry() {
+        return isAngry;
     }
 
     public String getName() {

@@ -37,7 +37,7 @@ public final class Main {
             if (userInput.equals("1")) {
                 System.out.println("Name: " + turtle.getName() +
                         "\nAge: " + turtle.getAge() +
-                        "\nAngry: " + turtle.getAngry() +
+                        "\nAngry: " + turtle.getIsAngry() +
                         "\nFavorite Food: " + turtle.getFavoriteFood());
             } else if (userInput.equals("2")) {
                 createTurtle(scanner);
@@ -59,14 +59,14 @@ public final class Main {
 
     public static void createTurtle(Scanner scanner) {
         System.out.println("What is its name?");
-        String nameTurtle = scanner.nextLine();
+        String turtleName = scanner.nextLine();
         System.out.println("What is its age? (# w/o decimal)");
-        int ageTurtle = Integer.parseInt(scanner.nextLine());
+        int turtleAge = Integer.parseInt(scanner.nextLine());
         System.out.println("Is it angry? (true/false)");
-        boolean angryTurtle = Boolean.parseBoolean(scanner.nextLine());
+        boolean isTurtleAngry = Boolean.parseBoolean(scanner.nextLine());
         System.out.println("What is its favorite food?");
-        String foodTurtle = scanner.nextLine();
+        String turtleFavoriteFood = scanner.nextLine();
 
-        turtle = new Turtle(ageTurtle, angryTurtle, nameTurtle, foodTurtle);
+        turtle = new Turtle(turtleAge, isTurtleAngry, turtleName, turtleFavoriteFood);
     }
 }
