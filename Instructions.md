@@ -1,5 +1,22 @@
 # Instructions on the Lab
 
+## Contents
+
+1. [Lore](#lore)
+2. [Lab Overall Requirements](#lab-overall-requirements)
+3. [Lab Requirements Description](#lab-requirements-description)
+    - [Turtle Class](#turtle-class)
+        - [Required Member Variables](#required-member-variables)
+        - [Methods](#methods)
+    - [Interaction Part](#interaction-part)
+4. [Step-by-Step Instructions](#step-by-step-instructions)
+    - [Turtle Class Instructions](#turtle-class-instructions)
+    - [Main Class Instructions](#main-class-instructions)
+5. [Example Input & Output](#example-input--output)
+    - [Turtle Creation](#turtle-creation)
+    - [Turtle Feeding & Lazing](#turtle-feeding--lazing)
+
+
 ## Lore
 You are creating an app that allows people to interact with animals (either as a game or just as a passion orject). You plan to implement more animals, but you have to start somewhere.\
 Soo... why not start with the turtle? After all, they're one of the best animals out there!
@@ -12,14 +29,14 @@ Soo... why not start with the turtle? After all, they're one of the best animals
 - Prompt the user to allow them to interact with the Turtle
 - Loosely follow the [example input and output](#example-input--output)
 
-## Actual Instructions Start Here
+## Lab Requirements Description
 
 ### Turtle Class
 
 #### Required Member Variables
 
 Write Setters and Getters for each of these variables
-- ``age``: an **integer** that represents the age of the turtle. Cannot be less than 0.
+- ``age``: an **integer** that represents the age of the turtle. **Cannot be less than 0**.
 - ``angry``: a **boolean**; true if the Turtle is angry
 - ``name``: a **string** that represents the name of the turtle
 - ``favoriteFood``: a **string** that represents name of the turtle's favorite food
@@ -29,15 +46,15 @@ NOTE: extra member variables may be required for method implementation
 
 #### Methods
 
-- Constructor
-- Parameters
-  - ``age``: an **integer** that represents the age of the turtle. Cannot be less than 0.
-  - ``angry``: a **boolean**; true if the Turtle is angry
-  - ``name``: a **string** that represents the name of the turtle
-  - ``favoriteFood``: a **string** that represents name of the turtle's favorite food
-- The constructor should set the variables corresponding to the member variables
+##### - Constructor
+  - Parameters
+    - ``age``: an **integer** that represents the age of the turtle. Cannot be less than 0.
+    - ``angry``: a **boolean**; true if the Turtle is angry
+    - ``name``: a **string** that represents the name of the turtle
+    - ``favoriteFood``: a **string** that represents name of the turtle's favorite food
+  - The constructor should set the variables corresponding to the member variables
 
-- ``eat``
+##### - ``eat``
   - Parameters
     - ``quantity``: an **integer**
     - ``food``: a **string**
@@ -49,7 +66,7 @@ NOTE: extra member variables may be required for method implementation
     - Prints out ``name ate food`` for each time they eat (based on ``quantity``)
   - NOTE: by default when the turtle is created they just ate
 
-- ``laze``
+##### - ``laze``
   - Parameter
     - ``hours``: a **double**
   - Requirements to laze
@@ -64,9 +81,49 @@ NOTE: extra member variables may be required for method implementation
 1. Create a Class called Main
 2. Create a Turtle based on user prompts
 3. In the main method allow the user to see the member variables listed in the class instructions
-4. Allow the user to set the member variables
+4. Allow the user to create a new turtle
 5. Allow the user to make the Turtle eat and laze
 6. Allow user to end their interaction by typing exit
+
+## Step-by-Step Instructions
+
+### Turtle Class Instructions
+1. First, start with declaring the private [member variables](#required-member-variables)!
+2. Next, let's create setters and getters for them!
+Remember a method is formatted like this
+  ```java
+  AccessModifier ReturnType methodName(Type paramName) {
+
+  }
+  ```
+3. Now let's create the [constructor](#constructor)
+  - Remember that constructors are methods with the same name as the class!
+4. The first method we'll create is the [``laze``](#laze) method
+    1. Start by using if statements to figure out if any requirements for the method is violated
+    2. Then print a cute little message if any of the requirements are violated
+    3. You can end a method early by calling ``return;`` in a void method!
+    4. Then, if none of the requirements are violated you can run the actual method and print a message that shows that the turtle has eaten
+    5. (**HINT**: You may need to keep track of the hours that the turtle has lazed with an additional private variable)
+5. The next method we'll create is the [``eat``](#eat) method
+    1. Now try and do the ``eat`` method the same way you did the ``laze`` method
+    2. (**HINT**: You might need to use the variable you created for lazing here to figure out the requirements!)
+
+### Main Class Instructions
+
+Note: Rememember your inputs!
+
+1. First, let's welcome the user and let them know what a turtle is! (use the ``turtleDescription`` variable)
+2. Now let's prompt our user to let them enter in the variables for the turtle
+3. Now that we have the user input we can create the Turtle!
+4. Now we want to create a loop that will continously take in input from the user until they type ``exit``
+5. After creating that loop now we want to prompt the user for what they want to do inside the loop
+    - Users can...
+        - See their turtle's characteristics
+        - Create a new turtle
+        - Feed their turtle
+        - Let their turtle laze
+6. For both feeding and lazing you'll want to prompt the user for the method parameters
+7. If you want to see an example of the code in action go to [Example Input & Output](#example-input--output)
 
 ## Example Input & Output
 
