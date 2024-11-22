@@ -253,7 +253,7 @@ What would you like to do?
 What food?
 straws
 How much?
-1
+2
 (-^-)
 Daniel just recently ate and can't eat anymore food
 
@@ -295,7 +295,7 @@ What would you like to do?
 What food?
 straws
 How much?
-100
+1000
 Daniel is shocked (?o?). It doesn't eat; there is too much food
 
 
@@ -310,7 +310,7 @@ What would you like to do?
 What food?
 plastic
 How much?
-2
+1
 Daniel only wants to eat its favorite food
 
 
@@ -325,8 +325,10 @@ What would you like to do?
 What food?
 straws
 How much?
-2
-Daniel happily eats the straws! :)
+3
+Daniel happily eats a straws! :)
+Daniel happily eats a straws! :)
+Daniel happily eats a straws! :)
 
 
 What would you like to do?
