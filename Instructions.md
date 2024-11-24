@@ -46,37 +46,37 @@ NOTE: extra member variables may be required for method implementation
 
 #### Methods
 
-##### - Constructor
-  - Parameters
-    - ``age``: an **integer** that represents the age of the turtle. **Cannot be less than 0**.
-    - ``angry``: a **boolean**; true if the Turtle is angry
-    - ``name``: a **string** that represents the name of the turtle
-    - ``favoriteFood``: a **string** that represents name of the turtle's favorite food
-  - The constructor should set the variables corresponding to the member variables
+##### Constructor
+- Parameters
+  - ``age``: an **integer** that represents the age of the turtle. **Cannot be less than 0**.
+  - ``angry``: a **boolean**; true if the Turtle is angry
+  - ``name``: a **string** that represents the name of the turtle
+  - ``favoriteFood``: a **string** that represents name of the turtle's favorite food
+- The constructor should set the variables corresponding to the member variables
 
-##### - ``eat``
-  - Parameters
-    - ``quantity``: an **integer**
-    - ``food``: a **string**
-  - Requirements to eat
-    - ``quantity <= 3``
-    - ``food.equals(favoriteFood) == true``
-    - Must have eaten 3 or more hours ago (time is based on lazing)
-  - Behaviour
-    - Prints out ``name ate food`` for each time they eat (based on ``quantity``)
-  - NOTE: by default when the turtle is created they just ate
-  - Note: ideally, you would check that ``quantity < 0`` is false, but this isn't a requirement that is listed here
+##### ``eat``
+- Parameters
+  - ``quantity``: an **integer**
+  - ``food``: a **string**
+- Requirements to eat
+  - ``quantity <= 3``
+  - ``food.equals(favoriteFood) == true``
+  - Must have eaten 3 or more hours ago (time is based on lazing)
+- Behaviour
+  - Prints out ``name ate food`` for each time they eat (based on ``quantity``)
+- NOTE: by default when the turtle is created they just ate
+- Note: ideally, you would check that ``quantity < 0`` is false, but this isn't a requirement that is listed here
 
-##### - ``laze``
-  - Parameter
-    - ``hours``: a **double**
-  - Requirements to laze
-    - ``hours <= 6.0``
-    - Can't laze if the turtle has lazed consecutively for 6 hours or more
-      - If they eat then they can laze again
-  - Behaviour
-    - Prints out ``name lazes for x hours. It now lazed consecutively for y hours``
-  - Note: ideally, you would check that ``hours < 0.0`` is false, but this isn't a requirement that is listed here
+##### ``laze``
+- Parameter
+  - ``hours``: a **double**
+- Requirements to laze
+  - ``hours <= 6.0``
+  - Can't laze if the turtle has lazed consecutively for 6 hours or more
+    - If they eat then they can laze again
+- Behaviour
+  - Prints out ``name lazes for x hours. It now lazed consecutively for y hours``
+- Note: ideally, you would check that ``hours < 0.0`` is false, but this isn't a requirement that is listed here
 
 ### Interaction Part
 
