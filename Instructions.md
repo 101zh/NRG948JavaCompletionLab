@@ -37,6 +37,7 @@ Soo... why not start with the turtle? After all, they're one of the best animals
 
 Write Setters and Getters for each of these variables
 - ``age``: an **integer** that represents the age of the turtle. **Cannot be less than 0**.
+  - If age is set incorrectly an error message should be sent and the age should be set to 0
 - ``angry``: a **boolean**; true if the Turtle is angry
 - ``name``: a **string** that represents the name of the turtle
 - ``favoriteFood``: a **string** that represents name of the turtle's favorite food
@@ -63,8 +64,9 @@ NOTE: extra member variables may be required for method implementation
   - ``food.equals(favoriteFood) == true``
   - Must have eaten 3 or more hours ago (time is based on lazing)
 - Behaviour
-  - Prints out ``name ate food`` for each time they eat (based on ``quantity``)
-- NOTE: by default when the turtle is created they just ate
+  - Prints out ``name happily eats a food! :)`` for each time they eat (based on ``quantity``)
+  - Prints a different message for different requirements violated. If multiple requirements are violated then only one of those messages are printed.
+- NOTE: by default when the turtle is created, they just ate
 - Note: ideally, you would check that ``quantity < 0`` is false, but this isn't a requirement that is listed here
 
 ##### ``laze``
@@ -75,7 +77,8 @@ NOTE: extra member variables may be required for method implementation
   - Can't laze if the turtle has lazed consecutively for 6 hours or more
     - If they eat then they can laze again
 - Behaviour
-  - Prints out ``name lazes for x hours. It now lazed consecutively for y hours``
+  - Prints out ``name lazes for x hours. name has now lazed consecutively for y hours``
+  - Prints a different message for different requirements violated. If multiple requirements are violated then only one of those messages are printed.
 - Note: ideally, you would check that ``hours < 0.0`` is false, but this isn't a requirement that is listed here
 
 ### Interaction Part
