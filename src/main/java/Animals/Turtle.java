@@ -11,7 +11,8 @@ public class Turtle {
     private String name;
     private String favoriteFood;
 
-    private double lazedHours = 0.0;
+    // Stores the number of consecutive lazed hours
+    private double consecutiveLazedHours = 0.0;
 
     public Turtle(int age, boolean isAngry, String name, String favoriteFood) {
         setAge(age);
